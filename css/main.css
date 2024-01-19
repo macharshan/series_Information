@@ -1,0 +1,88 @@
+*{
+    --siteColor-1 : #343434;
+    font-size: 62.5%;
+}
+
+body{
+    color: #aaa;
+    background-color: var(--siteColor-1);
+}
+
+h1{
+    font-size: 4.4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+p{
+    padding-block: 1rem;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: #ffa500;
+}
+
+#contents{
+    width: 100vw;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+#headerMain{
+    padding-top: 3rem;
+}
+
+form{
+    font-size: 4rem;
+}
+
+input{
+    color: #999;
+    background-color: #262626;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#movieSection{
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#moviePoster{
+    padding: 20%;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#movieDetails{
+    padding: 1rem;
+    background-color: #232323;
+    border-radius: 1rem;
+}
+
+
+#movieDetails li{
+    padding: 1rem;
+}
+
+.movieTitle{
+    font-size: 4rem;
+
+}
