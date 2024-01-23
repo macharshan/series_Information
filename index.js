@@ -10,7 +10,7 @@ const genres = document.querySelector(`#genres`)
 const rating = document.querySelector(`#rating`)
 const summary = document.querySelector(`#summary`)
 
-const p = document.createElement(`p`)
+const p = document.querySelector(`p`)
 const form = document.querySelector(`form`)
 
 function titleSizing(){
@@ -35,8 +35,13 @@ document.querySelector(`#searchButton`)
     e.preventDefault();
     
     const searchTerm = searchField.value
-    if(!searchTerm || searchTerm == ` `){
-        p.append(document.createTextNode(`Enter a series name`))
+
+    if(p.textContent == ` `){
+
+        form.remove(p)
+
+    } else if(!searchTerm || searchTerm == ` `){
+        p.textContent = `Enter a series name`
         form.append(p)
         searchField.value = ``
 
