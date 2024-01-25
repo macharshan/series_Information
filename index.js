@@ -26,7 +26,6 @@ function displayMovieSection(){
 
     movieSection.style.width = `90vw`
     movieSection.style.height = `fit-content`
-    // movieSection.style.height = `fit-content`
 
 }
 
